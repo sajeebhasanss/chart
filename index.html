@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart</title>
+    <!--Icon link-->
+    <link rel="icon" href="assets/image/sajeeb-hasan-logo.png">
+    <!--Bootstrap Css link-->
+    <link rel="stylesheet" href="assets/files/bootstrap.min.css">
+    <!--Custom Css link-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!--Navbar Start Here-->
+    <nav>
+        <div class="nav-container pt-4 d-flex justify-content-between">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Chart</h1>
+                </a>
+            </div>
+            <div id="open">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </div>
+            <div id="close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </div>
+            <ul id="navul">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li id="dropdown" >
+                    <a href="allchart.html">Chart
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                        <div id="dropdownItem">
+                            <ul class="d-flex flex-column bg-light p-0 py-2">
+                                <li><a href="barchart.html">Bar Chart</a></li>
+                                <li><a href="linechart.html">Line Chart</a></li>
+                                <li><a href="allchart.html">Other Chart</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--1st/Bar Chart Start Here-->
+    <section id="barChart" class="pb-5">
+        <div class="container">
+            <h6 class="text-center text-light py-3">Bar Chart</h6>
+            <canvas id="barChart1"></canvas>
+        </div>
+    </section>
+    <!--2st/Line Chart Start Here-->
+    <section id="lineChart" class="pb-5">
+        <div class="container">
+            <h6 class="text-center text-light py-3">Line Chart</h6>
+            <canvas id="lineChart1"></canvas>
+        </div>
+    </section>
+    <!--3rd/Radar Chart Start Here-->
+    <section id="radarChart" class="pb-5">
+        <div class="container">
+            <h6 class="text-center text-light py-3">Radar Chart</h6>
+            <canvas id="radarChart1"></canvas>
+        </div>
+    </section>
+    <!--4rd/Doughnut Chart Start Here-->
+    <section id="donughnutChart" class="pb-5">
+        <div class="container">
+            <h6 class="text-center text-light py-3">Doughnut Chart</h6>
+            <canvas id="doughnutChart1"></canvas>
+        </div>
+    </section>
+    <!--5th/Pie Chart Start Here-->
+    <section id="pieChart" class="pb-5">
+        <div class="container">
+            <h6 class="text-center text-light py-3">Pie Chart</h6>
+            <canvas id="pieChart1"></canvas>
+        </div>
+    </section>
+    <!--6th/Polar-Area Chart Start Here-->
+    <section id="polarAreaChart" class="pb-5">
+        <div class="container">
+            <h6 class="text-center text-light py-3">Polar-Area Chart</h6>
+            <canvas id="polarAreaChart1"></canvas>
+        </div>
+    </section>
+    <!--Bootstrap js link-->
+    <script src="assets/files/bootstrap.bundle.min.js"></script>
+    <!--Chart.js link-->
+    <script src="assets/files/chart.min.js"></script>
+    <!--Custom js link-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

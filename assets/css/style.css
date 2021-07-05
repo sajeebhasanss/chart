@@ -1,0 +1,121 @@
+body{
+    background: #1B1F29;
+}
+/*Navbar  Css Start*/
+nav {
+    background: #1B1F29;
+}
+nav .nav-container{
+    width: 90%;
+    margin: auto;
+}
+nav .nav-container .logo a {
+    text-decoration: none;
+    color: #d1cfcf;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+    line-height: 70px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #c4c3c3;
+    transition: color 0.5s;
+}
+nav ul li a:hover ,nav ul li .active {
+    color: #ffffff;
+}
+nav ul li:nth-child(2){
+    position: relative;
+}
+#dropdownItem {
+    position: absolute;
+    top: 22px;
+    left: -30px;
+    min-width: 120px;
+    display: none;
+    transition: all 0.5s;
+}
+#dropdownItem li {
+    line-height: 30px;
+    font-size: 14px;
+}
+#dropdownItem li a{
+    color: #727171;
+}
+#dropdownItem li a:hover {
+    color: #1B1F29;
+}
+ul li:nth-child(2):hover #dropdownItem{
+    display: block;
+}
+#open,#close{
+    display: none;
+    cursor: pointer;
+}
+#open {
+    color: #d1cfcf;
+}
+#close {
+    color: #616879;
+    z-index: 999;
+}
+/*Navbar Css End*/
+/*Navbar Responsive Css Start*/
+@media (max-width: 767px){
+    nav .container {
+        width: 90%;
+    }
+    nav ul {
+        background: #f3f3f3;
+        padding: 40px 0px;
+        height: 100vh;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        color: #727171;
+    }
+    nav ul li a:hover , nav ul li .active {
+        color: #1B1F29;
+        font-weight: 600;
+    }
+    #open {
+        display: block;
+        margin-top: 8px;
+    }
+    #dropdownItem ul {
+        position: absolute;
+        max-width: 500px;
+        max-height: 150px;
+        left: 20px;
+        top: 30px;
+    }
+}
+/*Navbar Responsive Css End*/
+/*Chart Css Start Here*/
+section .container{
+    max-width: 900px;
+    max-height: 530px;
+}
+section canvas{
+    background: #eee9e9;
+    border-radius: 10px;
+    padding: 30px 20px;
+    max-height: 438px;
+}
+
+/*Chart Responsive css*/
+@media (max-width: 480px){
+    section canvas {
+        padding: 10px 10px;
+    }
+}
